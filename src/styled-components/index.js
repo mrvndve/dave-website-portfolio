@@ -54,14 +54,14 @@ export const BannerSectionStyles = {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
-    gap: 50px;
+    gap: 60px;
 
     @media ${desktop} {
       padding: 200px;
     }
 
     @media ${laptop} {
-      padding: 200px;
+      padding: 150px;
     }
 
     @media ${tablet} {
@@ -103,8 +103,8 @@ export const BannerSectionStyles = {
     align-items: center;
 
     @media ${desktop} {
-      width: 500px;
-      height: 500px;
+      width: 450px;
+      height: 450px;
     }
 
     @media ${laptop} {
@@ -135,5 +135,63 @@ export const BannerSectionStyles = {
     justify-content: start;
     flex: wrap;
     gap: 20px;
+  `
+};
+
+export const ServiceSectionStyles = {
+  Container: styled.div`
+    text-align: center;
+
+    @media ${desktop} {
+      padding: 100px;
+    }
+
+    @media ${laptop} {
+      padding: 150px;
+    }
+
+    @media ${tablet} {
+      padding: 70px;
+    }
+
+    @media ${mobile} {
+      padding: 50px;
+    }
+  `,
+  Title: styled.span`
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1;
+  `,
+  SubTitle: styled.span`
+    font-family: karla, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: ${PALLETES['light'].tertiary};
+  `,
+  CardContainer: styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  `,
+  Card: styled.div`
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    height: 350px;
+    width: 500px;
+  `,
+  CardTitle: styled.span`
+    font-family: karla, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  `,
+  CardSubTitle: styled.span`
+    font-family: karla, sans-serif;
+    font-size: 18px;
+    color: ${PALLETES['light'].tertiary};
   `
 };
