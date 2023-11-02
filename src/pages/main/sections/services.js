@@ -4,7 +4,7 @@ import { SERVICES } from '../../../utils';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Services = () => {
+const ServicesSection = () => {
   const {
     Container,
     Title,
@@ -49,4 +49,4 @@ const Services = () => {
   </>;
 };
 
-export default Services;
+export default ServicesSection;

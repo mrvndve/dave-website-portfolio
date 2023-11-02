@@ -41,6 +41,24 @@ export const ButtonSecondary = styled.button`
   }
 `;
 
+export const Card = styled.div`
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  height: 350px;
+  width: 500px;
+
+  @media ${mobile} {
+    height: 500px;
+    width: auto;
+  }
+`;
+
+export const AbstractStyles = styled.div`
+  
+`;
+
 export const MainPageStyles = {
   Container: styled.div`
     background-color: white;
@@ -97,7 +115,7 @@ export const BannerSectionStyles = {
   ImageContainer: styled.div`
     border-radius: 50%;
     overflow: hidden;
-    background-color: rgba(${parseInt(PALLETES['light'].secondary.slice(1, 3), 16)}, ${parseInt(PALLETES['light'].secondary.slice(3, 5), 16)}, ${parseInt(PALLETES['light'].secondary.slice(5, 7), 16)}, 0.2);
+    background-color: #fbd6d5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,8 +131,8 @@ export const BannerSectionStyles = {
     }
 
     @media ${tablet} {
-      width: 300px;
-      height: 300px;
+      width: 400px;
+      height: 400px;
     }
 
     @media ${mobile} {
@@ -143,7 +161,7 @@ export const ServiceSectionStyles = {
     text-align: center;
 
     @media ${desktop} {
-      padding: 100px;
+      padding: 200px;
     }
 
     @media ${laptop} {
@@ -161,8 +179,7 @@ export const ServiceSectionStyles = {
   Title: styled.span`
     font-family: Poppins, sans-serif;
     font-weight: bold;
-    font-size: 50px;
-    line-height: 1;
+    font-size: 60px;
   `,
   SubTitle: styled.span`
     font-family: karla, sans-serif;
@@ -177,12 +194,21 @@ export const ServiceSectionStyles = {
     gap: 50px;
   `,
   Card: styled.div`
-    background: white;
-    border-radius: 25px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
     padding: 40px;
     height: 350px;
     width: 500px;
+
+    &:hover {
+      background: white;
+      border-radius: 25px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @media ${mobile} {
+      height: 500px;
+      width: auto;
+    }
   `,
   CardTitle: styled.span`
     font-family: karla, sans-serif;
@@ -193,5 +219,76 @@ export const ServiceSectionStyles = {
     font-family: karla, sans-serif;
     font-size: 18px;
     color: ${PALLETES['light'].tertiary};
+  `
+};
+
+export const SkillsSectionStyles = {
+  Container: styled.div`
+    text-align: center;
+
+    @media ${desktop} {
+      padding: 200px;
+    }
+
+    @media ${laptop} {
+      padding: 150px;
+    }
+
+    @media ${tablet} {
+      padding: 70px;
+    }
+
+    @media ${mobile} {
+      padding: 50px;
+    }
+  `,
+  Title: styled.span`
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+  `,
+  ImageContainer: styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  `,
+  Image: styled.img`
+    width: 100px;
+    height: 100px;
+  `,
+  ImageTitle: styled.span`
+    font-family: karla, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: ${PALLETES['light'].tertiary};
+  `
+};
+
+export const WorkHistoryStyles = {
+  Container: styled.div`
+    text-align: left;
+
+    @media ${desktop} {
+      padding: 200px;
+    }
+
+    @media ${laptop} {
+      padding: 150px;
+    }
+
+    @media ${tablet} {
+      padding: 70px;
+    }
+
+    @media ${mobile} {
+      padding: 50px;
+    }
+  `,
+  Title: styled.span`
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
   `
 };

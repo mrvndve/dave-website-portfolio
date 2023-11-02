@@ -2,7 +2,9 @@ import React from 'react';
 import { MainPageStyles } from '../../styled-components';
 
 import BannerSection from './sections/banner';
-import Services from './sections/services';
+import ServicesSection from './sections/services';
+import SkillSection from './sections/skills';
+import WorkHistorySection from './sections/work-history';
 
 const MainPage = () => {
   const { Container } = MainPageStyles;
@@ -11,7 +13,11 @@ const MainPage = () => {
     <Container>
       <BannerSection/>
 
-      <Services/>
+      <ServicesSection/>
+
+      <SkillSection/>
+
+      <WorkHistorySection/>
     </Container>
   </>;
 };
