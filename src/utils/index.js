@@ -123,6 +123,10 @@ export const SKILLS = [
     title: 'Nginx'
   },
   {
+    img: 'git.svg',
+    title: 'Git'
+  },
+  {
     img: 'bitbucket.svg',
     title: 'BitBucket'
   },
