@@ -17,7 +17,7 @@ const AppRoutes = () => {
   ];
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/dave-website-portfolio'>
       <Routes>
         {ROUTES_PATH.map((route, key) => (
           <Route
