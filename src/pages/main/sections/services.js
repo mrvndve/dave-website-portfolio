@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { ServiceSectionStyles } from '../../../styled-components';
 import { SERVICES } from '../../../utils';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ServicesSection = () => {
@@ -11,24 +10,26 @@ const ServicesSection = () => {
     CardContainer,
     Card,
     CardTitle,
-    CardSubTitle
+    CardDescription
   } = ServiceSectionStyles;
 
   return <>
     <Container>
-      <div className='mb-5'>
+      <div data-aos='fade-up' className='mb-5'>
         <Title>
-          My Services
+          Offered Services
         </Title>
       </div>
 
-      <div>
+      <div data-aos='fade-up'>
         <CardContainer>
           {SERVICES.map((i, index) => (
             <Fragment key={index}>
               <Card>
                 <div className='mb-4'>
-                  <FontAwesomeIcon className='mx-3' icon={faCode} size='xl'/>
+                  <div className='mb-3'>
+                    <FontAwesomeIcon className='mx-3' icon={i.icon} size='3x' color='#E9322E'/>
+                  </div>
 
                   <CardTitle>
                     {i.title}
@@ -36,9 +37,9 @@ const ServicesSection = () => {
                 </div>
 
                 <div>
-                  <CardSubTitle>
-                    {i.subTitle}
-                  </CardSubTitle>
+                  <CardDescription>
+                    {i.description}
+                  </CardDescription>
                 </div>
               </Card>
             </Fragment>

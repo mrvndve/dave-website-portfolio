@@ -1,3 +1,10 @@
+import {
+  faPenNib,
+  faDisplay,
+  faServer,
+  faShop
+} from '@fortawesome/free-solid-svg-icons';
+
 export const SCREENS = {
   desktop: '(min-width: 1200px)',
   laptop: '(min-width: 992px) and (max-width: 1440px)',
@@ -5,63 +12,28 @@ export const SCREENS = {
   mobile: '(max-width: 767px)'
 };
 
-const WHITE = 'white';
-const WHITESMOKE = 'whitesmoke';
-const BLACK = 'black';
-const LIGHTGREY = '#55527C';
-const RED = '#E9322E';
-
-export const PALLETES = {
-  light: {
-    button: {
-      primary: {
-        bg: BLACK,
-        txt: WHITE
-      },
-      secondary: {
-        bg: RED,
-        txt: WHITE
-      }
-    },
-    primary: BLACK,
-    secondary: RED,
-    tertiary: LIGHTGREY
-  },
-  dark: {
-    button: {
-      primary: {
-        bg: WHITE,
-        txt: BLACK
-      },
-      secondary: {
-        bg: RED,
-        txt: WHITE
-      }
-    },
-    primary: WHITE,
-    secondary: RED,
-    tertiary: WHITESMOKE
-  }
-};
-
 export const EMAIL = 'marvindavegajultos@gmail.com';
 
 export const SERVICES = [
   {
+    icon: faPenNib,
     title: 'Web Design',
-    subTitle: 'I understand that your website is an extension of your brand. my works closely with you to create a unique and visually stunning website that reflects your identity and goals.'
+    description: 'I understand that your website is an extension of your brand. my works closely with you to create a unique and visually stunning website that reflects your identity and goals.'
   },
   {
+    icon: faDisplay,
     title: 'Cross-Platform Website',
-    subTitle: 'Discover my expertise in creating cross-platform websites that shine on desktops, laptops, tablets, and smartphones. With responsive design, mobile compatibility, and user-centric focus, I build unified web experiences for a diverse digital audience.'
+    description: 'Discover my expertise in creating cross-platform websites that shine on desktops, laptops, tablets, and smartphones. With responsive design, mobile compatibility, and user-centric focus, I build unified web experiences for a diverse digital audience.'
   },
   {
+    icon: faShop,
     title: 'E-Commerce Website',
-    subTitle: 'Explore my proficiency in designing and developing e-commerce websites. With a focus on user-friendly interfaces, secure payment gateways, and an eye for converting visitors into customers, I create online shopping experiences that drive success.'
+    description: 'Explore my proficiency in designing and developing e-commerce websites. With a focus on user-friendly interfaces, secure payment gateways, and an eye for converting visitors into customers, I create online shopping experiences that drive success.'
   },
   {
+    icon: faServer,
     title: 'API Development & Microservices',
-    subTitle: 'Crafting custom APIs to seamlessly connect and empower your digital ecosystem. Experience in data integration, security, and scalability. Let\'s collaborate on your API-driven solutions for enhanced performance and functionality.'
+    description: 'Crafting custom APIs to seamlessly connect and empower your digital ecosystem. Experience in data integration, security, and scalability. Let\'s collaborate on your API-driven solutions for enhanced performance and functionality.'
   }
   // {
   //   title: 'Basic Security',
@@ -170,7 +142,7 @@ export const SKILLS = [
 
 export const WORK_HISTORY = [
   {
-    title: 'Software Engineer / Fullstack Developer',
+    title: 'Software Engineer',
     company: 'Hier Business Solutions Inc.',
     date: 'May 2019 - May 2021'
   },
@@ -180,7 +152,7 @@ export const WORK_HISTORY = [
     date: 'May 2021 - May 2022'
   },
   {
-    title: 'Freelance Frontend Developer',
+    title: 'Frontend Developer',
     company: 'Flexmark International',
     date: 'August 2021 - January 2022'
   },
@@ -190,13 +162,50 @@ export const WORK_HISTORY = [
     date: 'May 2022 - Present'
   },
   {
-    title: 'Freelance Frontend Developer',
+    title: 'Fullstack Developer',
     company: 'BlueOcean Gaming',
     date: 'September 2023 - Present'
   },
   {
-    title: 'Freelacne Frontend Developer',
+    title: 'Fullstack Developer',
     company: 'Online Perya Philippines',
     date: 'October 2023 - Present'
+  }
+];
+
+export const PORTFOLIO = [
+  {
+    title: 'CJCA Learning Management System',
+    links: ['https://github.com/mrvndve/cjca-lms-frontend', 'https://github.com/mrvndve/cjca-lms-backend-api'],
+    description: 'Frontend & Backend API for CJCA Learning Management System developed from ReactJs, JavaScript, CodeIgniter, PHP'
+  },
+  {
+    title: 'Umal Marketing E-Commerce',
+    links: ['https://github.com/mrvndve/um-online-store-frontend', 'https://github.com/mrvndve/um-online-store-backend-api'],
+    description: 'Frontend & Backend API for Umal Marketing E-Commerce developed from ReactJs, JavaScript, ExpressJs, NodeJs'
+  },
+  {
+    title: 'Bosscar Rental Cars',
+    links: ['https://github.com/mrvndve/bosscar-online-booking-frontend', 'https://github.com/mrvndve/bosscar-online-booking-backend-api'],
+    description: 'Frontend & Backend API for Bosscar Online Booking developd from ReactJs, TypeScript, ExpressJs, NodeJs'
+  }
+];
+
+export const SOCIAL_MEDIAS = [
+  {
+    img: 'facebook.svg',
+    link: 'https://www.facebook.com/MD21000'
+  },
+  {
+    img: 'instagram.svg',
+    link: 'https://www.instagram.com/_mrvndve/'
+  },
+  {
+    img: 'linkedin.svg',
+    link: 'https://www.linkedin.com/in/marvin-dave-gajultos-0b4256229/'
+  },
+  {
+    img: 'github.svg',
+    link: 'https://github.com/mrvndve'
   }
 ];

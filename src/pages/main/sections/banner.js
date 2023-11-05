@@ -37,7 +37,7 @@ const BannerSection = () => {
 
   return <>
     <Container>
-      <div>
+      <div data-aos='fade-up'>
         <div className='mb-2'>
           <FontAwesomeIcon icon={faCrosshairs} size='xs'/>
           <JobTitle>
@@ -67,7 +67,7 @@ const BannerSection = () => {
         </ButtonContainer>
       </div>
 
-      <div>
+      <div data-aos='fade-left'>
         <ImageContainer>
           <Image src={`${process.env.PUBLIC_URL}/assets/images/profile.png`}/>
         </ImageContainer>

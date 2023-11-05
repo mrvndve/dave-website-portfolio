@@ -1,15 +1,70 @@
 import React from 'react';
 import { WorkHistoryStyles } from '../../../styled-components';
+import { WORK_HISTORY } from '../../../utils';
 
 const WorkHistorySection = () => {
-  const { Container, Title } = WorkHistoryStyles;
+  const {
+    Container,
+    TitleContainer,
+    PreTitle,
+    Title,
+    HistoryContainer,
+    HistoryDate,
+    HistoryTitle,
+    HistoryDescription,
+    HistoryLine
+  } = WorkHistoryStyles;
 
   return <>
     <Container>
-      <div className='mb-5'>
-        <Title>
-          Work History
-        </Title>
+      <div className='row g-5'>
+        <div data-aos='fade-up' className='col-12'>
+          <TitleContainer>
+            <div>
+              <PreTitle>
+                EXPERIENCES
+              </PreTitle>
+            </div>
+
+            <div>
+              <Title>
+                Work History
+              </Title>
+            </div>
+          </TitleContainer>
+        </div>
+
+        <div className='col-12'>
+          {WORK_HISTORY.map((i, index) => (
+            <div data-aos='fade-up' key={index}>
+              <HistoryContainer>
+                <div>
+                  <HistoryDate>
+                    {i.date}
+                  </HistoryDate>
+                </div>
+
+                <div>
+                  <HistoryTitle>
+                    {i.title}
+                  </HistoryTitle>
+                </div>
+
+                <div>
+                  <HistoryDescription>
+                    {i.company}
+                  </HistoryDescription>
+                </div>
+              </HistoryContainer>
+
+              {index !== WORK_HISTORY.length - 1 && (
+                <div className='d-flex justify-content-center align-items-center'>
+                  <HistoryLine />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </Container>
   </>;
