@@ -20,8 +20,8 @@ const ProjectsSection = () =>{
 
   return <>
     <Container>
-      <div className='row g-5'>
-        <div data-aos='fade-right' className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
+      <div data-aos='fade-up' className='row g-5'>
+        <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
           <TitleContainer>
             <div>
               <PreTitle>
@@ -37,7 +37,7 @@ const ProjectsSection = () =>{
           </TitleContainer>
         </div>
 
-        <div data-aos='fade-left' className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
+        <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
           <div className='row g-5'>
             {PORTFOLIO.map((i, index) => (
               <Fragment key={index}>

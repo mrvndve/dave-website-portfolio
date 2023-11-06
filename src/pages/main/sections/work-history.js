@@ -17,8 +17,8 @@ const WorkHistorySection = () => {
 
   return <>
     <Container>
-      <div className='row g-5'>
-        <div data-aos='fade-up' className='col-12'>
+      <div data-aos='fade-up'className='row g-5'>
+        <div className='col-12'>
           <TitleContainer>
             <div>
               <PreTitle>
@@ -36,7 +36,7 @@ const WorkHistorySection = () => {
 
         <div className='col-12'>
           {WORK_HISTORY.map((i, index) => (
-            <div data-aos='fade-up' key={index}>
+            <div key={index}>
               <HistoryContainer>
                 <div>
                   <HistoryDate>

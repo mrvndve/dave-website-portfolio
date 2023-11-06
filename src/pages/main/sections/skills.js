@@ -14,8 +14,8 @@ const SkillSection = () => {
 
   return <>
     <Container>
-      <div className='row g-5'>
-        <div data-aos='fade-up' className='col-12'>
+      <div data-aos='fade-up' className='row g-5'>
+        <div className='col-12'>
           <TitleContainer>
             <div>
               <PreTitle>
@@ -31,7 +31,7 @@ const SkillSection = () => {
           </TitleContainer>
         </div>
 
-        <div data-aos='fade-up' className='col-12'>
+        <div className='col-12'>
           <ImageContainer>
             {SKILLS.map((i, index) => (
               <Fragment key={index}>

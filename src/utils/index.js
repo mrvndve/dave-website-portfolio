@@ -161,17 +161,17 @@ export const WORK_HISTORY = [
     date: 'August 2021 - January 2022'
   },
   {
-    title: 'Frontend Developer',
+    title: 'Senior Frontend Developer',
     company: 'Union Bank of the Philippines',
     date: 'May 2022 - Present'
   },
   {
-    title: 'Fullstack Developer',
+    title: 'Senior Fullstack Developer',
     company: 'BlueOcean Gaming',
     date: 'September 2023 - Present'
   },
   {
-    title: 'Fullstack Developer',
+    title: 'Senior Fullstack Developer',
     company: 'Online Perya Philippines',
     date: 'October 2023 - Present'
   }
